@@ -1,0 +1,28 @@
+:root,
+:root.light {
+	--bg-color: #{$dark1};
+	--highlight-color: #{$lightgrey};
+	--text-color: #{$black};
+
+	--red: #{$red};
+	--orange: #{$orange};
+	--yellow: #{$yellow};
+	--green: #{$green};
+	--blue: #{$blue};
+	--purple: #{$purple};
+	--pink: #{$pink};
+}
+
+:root.dark {
+	--bg-color: #{$dark1};
+	--highlight-color: #{$dark2};
+	--text-color: #{$white};
+
+	--red: #{lighten($red, 5)};
+	--orange: #{lighten($orange, 5)};
+	--yellow: #{lighten($yellow, 5)};
+	--green: #{lighten($green, 5)};
+	--blue: #{lighten($blue, 5)};
+	--purple: #{lighten($purple, 5)};
+	--pink: #{lighten($pink, 5)};
+}
