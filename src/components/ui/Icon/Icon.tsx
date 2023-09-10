@@ -4,14 +4,14 @@ import './Icon.scss';
 interface IconComponent {
 	name: string;
 	title?: string;
-	size: string;
+	size?: string;
 }
 
 type IconElement = {
 	[key: string]: any;
 };
 
-export const Icon = ({ name, title, size }: IconComponent) => {
+export const Icon = ({ name, title, size = 'md' }: IconComponent) => {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -19,6 +19,7 @@ export const Icon = ({ name, title, size }: IconComponent) => {
 			height="24"
 			className={`icon${size ? ` icon-${size}` : ''} ${name}`}
 			viewBox="0 -960 960 960"
+			fill="currentColor"
 		>
 			<title>{title}</title>
 			{getInnerIcon(name)}
